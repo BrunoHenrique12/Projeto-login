@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
 /*
-
-Paleta de Cores
-Verde: #49a09d
-Lilás: #5f2c82
-
+    Paleta de Cores
+    Verde: #49a09d
+    lilás: #5f2c82
 */
 
 * {
@@ -17,107 +15,42 @@ Lilás: #5f2c82
 
 html, body {
     background-color: #5f2c82;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 main {
     position: relative;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 section#login {
+    background-color: #ffffff;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000007c;
+    overflow: hidden;
+
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
-
-    background-color: #ffffff;
-    width: 250px;
-    height: 515px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.705);
 
     transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
-section#login > div#imagen {
+section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/metal.jpg) no-repeat center center;
+    background: #5f2c82 url(../imagens/metal.jpg) no-repeat;
     background-size: cover;
+    background-position: right center;
     height: 200px;
 }
 
 section#login > div#formulario {
     display: block;
     padding: 10px;
-
-}
-
-div#formulario > h1 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-div#formulario > p {
-    font-size: 0.8em;
-}
-
-div.campo > input {
-    outline: none;
-    height: 40px;
-}
-
-form > div.campo {
-    background-color: #5f2c82;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
-}
-
-div.campo > label {
-    display: none;
-}
-
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 100%;
-    height: 40px;
-    background-color: #49a09d;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form >input[type=submit]:hover {
-    background-color: #2d6462;
-}
-
-form > a.botao {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    width: 100%;
-    height: 40px;
-    padding-top: 5px;
-    margin-top: 5px;
-    background-color: #ffffff;
-    color: #2d6462;
-    border: 1px solid #49a09d;
-    border-radius: 7px;
-    text-decoration: none;
-}
-
-form > a.botao:hover {
-    background-color: #6cd3cf;
-}
- 
-form > a.botao > span {
-  font-size: 0.8em;  
 }
